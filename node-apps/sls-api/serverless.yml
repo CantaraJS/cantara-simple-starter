@@ -22,3 +22,5 @@ custom:
     includeModules:
       packagePath: ./package.json
     packager: npm
+  serverless-offline:
+    port: 3002

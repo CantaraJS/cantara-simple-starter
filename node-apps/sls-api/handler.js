@@ -13,5 +13,5 @@ export const handler = async (_, __, cb) => {
     isBase64Encoded: false,
   };
 
-  cb(null, response);
+  return response;
 };
