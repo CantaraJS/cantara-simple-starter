@@ -1,8 +1,15 @@
 {
   "name": "random-image-widget",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
-  "main": "build/index.js",
+  "main": "./build/random-image-widget/src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,12 +17,6 @@
   "author": "",
   "license": "ISC",
   "private": true,
-  "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
