@@ -1,0 +1,30 @@
+{
+  "target": "esnext",
+  "exclude": [
+    "**/build/**/*"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "esnext",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "jsx": "react",
+    "paths": {
+      "core-api": [
+        "packages/core-api/src"
+      ],
+      "random-image-widget": [
+        "packages/random-image-widget/src"
+      ]
+    }
+  }
+}

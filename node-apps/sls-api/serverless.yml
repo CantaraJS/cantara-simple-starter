@@ -1,0 +1,24 @@
+service: random-image
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  environment:
+    STAGE: '${opt:stage}'
+functions:
+  handler:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+plugins:
+  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-offline'
+  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-webpack'
+custom:
+  webpack:
+    webpackConfig: ../../../cantara/static/.temp/serverlessWebpackConfig.js
+    includeModules:
+      packagePath: ./package.json
+    packager: npm
