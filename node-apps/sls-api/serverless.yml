@@ -13,14 +13,6 @@ functions:
           path: /
           method: get
           cors: true
-plugins:
-  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-offline'
-  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-webpack'
 custom:
-  webpack:
-    webpackConfig: ../../../cantara/static/.temp/serverlessWebpackConfig.js
-    includeModules:
-      packagePath: ./package.json
-    packager: npm
   serverless-offline:
     port: 3002
