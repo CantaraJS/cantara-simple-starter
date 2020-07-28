@@ -4,6 +4,7 @@
     "**/build/**/*"
   ],
   "compilerOptions": {
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "target": "esnext",
     "moduleResolution": "node",
@@ -16,14 +17,21 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
     "baseUrl": "./",
     "jsx": "react",
     "paths": {
       "core-api": [
         "packages/core-api/src"
       ],
+      "core-api/*": [
+        "packages/core-api/src/*"
+      ],
       "random-image-widget": [
         "packages/random-image-widget/src"
+      ],
+      "random-image-widget/*": [
+        "packages/random-image-widget/src/*"
       ]
     }
   }

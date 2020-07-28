@@ -1,5 +1,6 @@
 import React from 'react';
 import RandomImageWidget from 'random-image-widget';
+import fetchPlanets from 'planets-api';
 
 import {
   appContainer,
@@ -9,6 +10,12 @@ import {
 
 import cantaraLogo from './cantara.svg';
 import waveImg from './wave.svg';
+
+async function test() {
+  const planets = await fetchPlanets();
+  console.log('planets', planets);
+}
+test();
 
 interface Props {}
 

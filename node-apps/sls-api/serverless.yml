@@ -16,3 +16,11 @@ functions:
 custom:
   serverless-offline:
     port: 3002
+  webpack:
+    webpackConfig: ../../../cantara/static/.temp/sls-api_serverlessWebpackConfig.js
+    includeModules:
+      packagePath: ./package.json
+    packager: npm
+plugins:
+  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-offline'
+  - 'C:/Users/maxim/DEV/cantara/node_modules/serverless-webpack'
